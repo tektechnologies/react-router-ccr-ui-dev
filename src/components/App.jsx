@@ -26,51 +26,51 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 // SECOND LESSON ////////////////////////////////////////////////////////////////
-import { getPost, getPosts } from './api';
+// import { getPost, getPosts } from './api';
 
-function Home() {
-  const posts = getPosts();
+// function Home() {
+//   const posts = getPosts();
 
-  return (
-    <div>
-      <h1>Posts</h1>
-      <nav>
-        <ul>
-          {
-            posts.map(({id, title}) => (
-              <li key={id}>
-                <Link to={`blogs/${id}`}>{title}</Link>
-          </li>
-        ))
-          }
+//   return (
+//     <div>
+//       <h1>Posts</h1>
+//       <nav>
+//         <ul>
+//           {
+//             posts.map(({id, title}) => (
+//               <li key={id}>
+//                 <Link to={`blogs/${id}`}>{title}</Link>
+//           </li>
+//         ))
+//           }
           
-        </ul>
-      </nav>
-    </div>
-  );
-}
+//         </ul>
+//       </nav>
+//     </div>
+//   );
+// }
 
-function Post() {
-  return (
-    <div>
-      good bye world
-    </div>
-  );
-}
+// function Post() {
+//   return (
+//     <div>
+//       good bye world
+//     </div>
+//   );
+// }
 
-export default function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={<Home />}
-        />
-        <Route
-          path="blog/:id"
-          element={<Post />}
-        />
-      </Routes>
-    </Router>
-  );
-}
+// export default function App() {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route
+//           path="/"
+//           element={<Home />}
+//         />
+//         <Route
+//           path="blog/:id"
+//           element={<Post />}
+//         />
+//       </Routes>
+//     </Router>
+//   );
+// }
