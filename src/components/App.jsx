@@ -13,7 +13,7 @@ export default function App () {
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home />}/>
+        <Route path='/index' element={<Home />}/>
         <Route path='/players' element={<Players />}/>
         <Route path='/teams' element={<Teams />}/>
         <Route path='/:teamId' element={<TeamPage />}/>
