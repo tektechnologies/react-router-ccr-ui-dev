@@ -1,12 +1,31 @@
 
 // FIRST LESSON //////////////////////////////////////////////
-// export default function Home () {
-//     return (
-//         <div className="container">
-//             Home
-//         </div>
-//     )
-// }
+import TeamLogo from './TeamLogo';
+import { Link } from 'react-router-dom';
+import useTeamNames from '../hooks/useTeamNames';
+
+export default function Home() {
+    const {
+        loading,
+        response: teamNames
+    } = useTeamNames();
+
+    if (loading) {
+        return null;
+    }
+
+
+    return (
+        <div className="container">
+            <h1 className='large-header'>
+                Hash History Basketball League
+            </h1>
+            <h3 className='header text-center'>
+                Select a team
+            </h3>
+        </div>
+    )
+}
 // FIRST LESSON //////////////////////////////////////////////
 
 
