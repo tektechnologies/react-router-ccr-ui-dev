@@ -32,7 +32,7 @@
 //   const [searchParams] = useSearchParams();
 //   const userId = searchParams.get('id');
 // //   const user = users[userId];
-// if (!id) {
+// if (!userIdf) {
 //     return <p>Select a user</p>;
 //   }
 // //   return (
